@@ -17,7 +17,11 @@ Apply Feature generation and selection techniques to all the features of the dat
 Apply data visualization techniques to identify the patterns of the data.
 
 
-# CODE
+# CODE:
+```py
+Developed by:KAnishka.V,s
+Register no:212222230061
+```
 ```py
 import seaborn as sns
 import pandas as pd
@@ -25,9 +29,11 @@ import matplotlib.pyplot as plt
 df=sns.load_dataset("tips")
 print(df)
 ```
+
 ```py
 df.isnull().sum()
 ```
+
 ```py
 plt.figure(figsize=(5,5))
 plt.title("Data with outliners")
@@ -45,20 +51,25 @@ plt.title("Dataset after removing outliners")
 df.boxplot()
 plt.show()
 ```
-```pysns.barplot(x=df['day'],y=df['total_bill'],hue=df['day'])
+
+```py
+sns.barplot(x=df['day'],y=df['total_bill'],hue=df['day'])
 plt.legend(loc="center")
 plt.title("Highest Total Bill Amount by day of the week")
 plt.show()
 ```
+
 ```py
 sns.boxplot(x=df['smoker'],y=df['tip'],hue=df['smoker'])
 plt.title("Average Tip Amount given by smokers and non-smokers")
 ```
+
 ```py
 df["tip_percent"]=df["tip"]/df["total_bill"]
 sns.scatterplot(x=df['size'],y=df['tip_percent'],data=df)
 plt.title("Tip Percentage by Dining Party Size")
 ```
+
 ```py
 sns.boxplot(x=df['sex'],y=df['tip'],hue=df['sex'])
 plt.title("Tips based on gender")
@@ -110,3 +121,5 @@ plt.show()
 ![image](https://github.com/kanishka2305/ODD2023-Datascience-Ex-09/assets/113497357/db310a74-7301-44dc-a8c4-69e04fdff721)
 ![image](https://github.com/kanishka2305/ODD2023-Datascience-Ex-09/assets/113497357/cab7f5fd-d340-48c2-aaa3-f800e39142c4)
 
+# Result:
+Thus, Data Visualization on a complex dataset and save the data to a file has been performed successfully.
